@@ -1,0 +1,182 @@
+/* Set a white background color */
+body {
+    background-color: #ffffff;
+    font-family: Calibri, sans-serif;
+}
+
+/* Style for top-left navigation bar */
+#nav {
+    float: right;
+}
+  
+/* Style the intro section */
+#intro {
+text-align: center;
+padding: 30px;
+}
+
+.profile img {
+border-radius: 50%;
+width: 150px;
+height: 150px;
+}
+
+/* Style the main section */
+#main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 50px;
+}
+
+/* Style for about me section */
+.container {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.about-content {
+background-color: #f9f9f9;
+border: 1px solid #e6e6e6;
+padding: 30px;
+border-radius: 5px;
+}
+
+/* Style the posts section */
+.posts {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+/* Style for last two posts */
+#last1 {
+    margin: 0px;
+}
+
+#last2 {
+    margin: 0px;
+}
+
+/* Style each individual project */
+article {
+width: 45%;
+margin-bottom: 50px;
+background-color: #f9f9f9;
+padding: 20px;
+border: 1px solid #ddd;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+border-radius: 5px;
+}
+
+article h2 {
+margin-top: 0;
+}
+
+article p {
+margin-bottom: 20px;
+}
+
+article a.button {
+display: block;
+margin-top: 20px;
+}
+
+/* Regression Model Style */
+#regression {
+    display: flex;
+}
+
+#regression img {
+    height: 50%;
+    width: 50%;
+}
+
+/* Style images within projects */
+article img {
+border: 1px solid #ddd;
+max-width: 100%;
+height: auto;
+border-radius: 5px;
+}
+
+/* Style Completed Courses */
+.list-container {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 10px); /* reduce the width by the padding to avoid wrapping */
+    box-sizing: border-box; /* include the padding in the width calculation */
+    padding: 0 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding-left: 30px; /* adjust this value based on the size of your image */
+    height: 20px;
+    line-height: 20px;
+}
+
+li.umich {
+    background: url('../images/umich.jpg') no-repeat left center;
+    background-size: 20px 20px;
+}
+  
+li.nmc {
+    background: url('../images/nmc.jpg') no-repeat left center;
+    background-size: 20px 20px;
+}
+
+/* Experiences */
+#elp {
+    padding: 60px;
+    margin: 0 5%;
+}
+
+#nome {
+    padding: 52px;
+    margin: 0 23%;
+}
+
+#mpowered {
+    height: 200px;
+    padding: 40px;
+    margin: 0 23%;
+}
+
+/* Style for buttons */
+.button {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    margin-top: 1em;
+    background-color: #2196F3;
+    color: #fff;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #0c7cd5;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: #0a5ca2;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button-link:hover {
+    text-decoration: underline;
+}
+  
