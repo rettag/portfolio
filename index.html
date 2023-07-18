@@ -4,10 +4,13 @@
 		<title>Portfolio</title>
         <!-- Main Style Sheet -->
 		<link rel="stylesheet" href="css/style.css" />
+        <!-- IPhone -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Icon Style Sheet From Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	</head>
 	<body>
+        <!-- Get Transparent Images: https://www.remove.bg/-->
 
         <!-- Navigation -->
         <div id="nav">
@@ -19,197 +22,302 @@
         <!-- Intro -->
             <div id="intro">
                 <h1>Rett Graham</h1>
-                <div class="profile"><img src="images/Profile Image.jpg" alt="" /></div><br>
-                <p>Hi I'm Rett and welcome to my portfilio<br>This is where I showcase my projects and to introduce more about me</p>
+                <div class="profile"><img src="images/profile.png" alt="" /></div><br>
+                <p><b>Hi I'm Rett and welcome to my portfolio<br>This is where I showcase my projects and introduce more about me</b></p>
             </div>
 
         <!-- About Me -->
-        <section class="section">
-            <div class="container">
-              <h2>About Me</h2>
-              <div class="about-content">
-                <p>
-                Hi my name is Rett! I'm currently an undergraduate studying Computer Science at the University of Michigan. 
-                I transfered here from a small insitution called Northwestern Community College (NMC) where I studied for my ASA associates degree.
-                During my time enrolled I took classes dominated in mathamatics and sciences with ambitions of an ultimate goal to relocate to Ann Arbor. 
-                My passion is to effiently solve solutions to problems using problem-solving and crictal thinking skills -- which is why I love engineering. 
-                I chose computer science because it has exactly those qualities while also allowing creativity at your figure-tip by opening up a computer. At
-                the Univeristy of Michigan I have been involved in multiple entreprenurship clubs and events as well as driven to completed personal and in-class projects.
-                </p>
+        <section id="about">
+              <div id="about-title">About Me</div>
+              <div id="about-content">
+                I am Rett, a Computer Science undergraduate at the University of Michigan. My passion for efficiency and problem-solving 
+                led me to choose computer science. Through active involvement in clubs, labs, and internships, I gained practical experience 
+                and a learn-by-doing mindset. Below you can view some of my personal projects along with other expereinces I have had. In the end, 
+                I aspire to leverage code for meaningful and positive impacts on others.
                 </div>
-            </div>
-          </section>
+        </section>
 
-        <!-- Main -->
-            <div id="main">
-                <h2> Personal Projects</h2>
-                <!-- Posts -->
-                    <section class="posts">
+        <!-- Project Section -->
+            <div id="project-section">
+                <!-- Projects Title -->
+                <div id="projects-title">Personal Projects</div>
+                <!-- Projects -->
+                    <section id="projects">
                         <article>
                             <header>
-                                
                                 <h2>Sorting Simulator</h2>
                             </header>
                             <img src="images/sort.gif" alt="" />
-                            <p>Implemented 6 core sorting algorithms that visualizes elements from an array being sorted in
-                                real-time using JavaScript and HTML & CSS. Features implemented can modify size and
-                                elements in array, change sorting speed, and more.</p>
-                            <a href="https://github.com/rettag/Sorting-Simulator" class="button-link"><div class="button">Check it out</div></a>
+                            
+                            <div class="content">
+                                <div class="what-i-did">What I Did</div>
+
+                                <div>Implemented 6 core sorting algorithms that visualizes elements from an array being sorted in
+                                    real-time. Features implemented can modify size and
+                                    elements in array, change sorting speed, and more. This project strengthen my
+                                    understanding of core sorting algorithms.</div>
+                                
+                                <div class="button-and-codes">
+                                    <a href="https://github.com/rettag/Sorting-Simulator" class="button">Check it out</a>
+                                    <div class="code">
+                                        <code>HTML</code>
+                                        <code>CSS</code>
+                                        <code>JavaScript</code>
+                                    </div>
+                                </div>
+                            </div>
                         </article>
+
                         <article>
                             <header>
-                                
                                 <h2>Path-Finding Vizualizer</h2>
                             </header>
                             <img src="images/path.gif" alt="" />
-                            <p>Implemented depth-first-search pathfinding algorithm that is visualized on a grid. Includes
-                                features such as barriers and an option for adjusting start and end points that can be preset. While
-                                the program runs it finds the shortest path from both points and displays the results to the user.</p>
-                            <a href="https://github.com/rettag/Path-Finding-Visualizer" class="button-link"><div class="button">Check it out</div></a>
-                        </article>
-                        <article>
-                            <header>
-                                <h2>NBA Linear Regression Model</h2>
-                            </header>
-                            <div id="regression">
-                                <img src="images/nba_regression_model.PNG" alt="" />
-                                <img src="images/nba_regression_model2.PNG" alt="" />
-                            </div>
-                            <p>Inspired by my statistic and linear algebra courses. I designed this project using Python for the purpose of 
-                                learning data extraction from websites, data cleaning, visualizing data, and creating a linear regression
-                                model for an introduction to machine learning. I wanted to see if taking a few key statistics from
-                                NBA Games is sufficent to predict the final score of NBA games.</p>
 
-                            <p>I took a few key statistics from all 2022 NBA regular season games: 3P%, 
-                                FT%, ORB, STL, TOV. I used a dataset of the key statistics and the final score. 
-                                I split the data into a train and test dataset.  I used the key statistics and final scores 
-                                form the train dataset to make trained model. For the test dataset, I removed the final scores and kept the key statistics.</p>
-                            <a href="https://github.com/rettag/NBA-Games-Linear-Regression-Model" class="button-link" target="_blank"><div class="button">Check it out</div></a>
+                            <div class="content">
+                                <div class="what-i-did">What I Did</div>
+
+                                <div>Implemented depth-first-search pathfinding algorithm that is visualized on a grid. Includes
+                                    features such as barriers and an option for adjusting start and end points that can be preset. This project strengthen my
+                                    understanding of core pathfinding algorithms.
+                                </div>
+                                
+                                <div class="button-and-codes">
+                                    <a href="https://github.com/rettag/Path-Finding-Visualizer" class="button">Check it out</a>
+                                    <div class="code">
+                                        <code>HTML</code>
+                                        <code>CSS</code>
+                                        <code>JavaScript</code>
+                                    </div>
+                                </div>
+                            </div>
                         </article>
+
                         <article>
                             <header>
-                                <h2>NBA Database</h2>
+                                <h2>NBA Game Predictor</h2>
+                            </header>
+                            <img src="images/dribblebot.png" alt="" />
+
+                            <div class="content">
+                                <div class="what-i-did">What I Did</div>
+
+                                <div>
+                                    I developed a game predictor utilizing a logistic regression machine learning model to forecast NBA game outcomes.
+                                    This tool saved me valuable time by eliminating the need to watch games just to see if my favorite team would win. 
+                                    I gained valuable experience in data scraping, developing Flask APIs, external APIs, and working with machine learning models.
+                                </div>
+                                
+                                <div class="button-and-codes">
+                                    <a href="https://github.com/rettag/NBA-Game-Predictor" class="button">Check it out</a>
+                                    <div class="code">
+                                        <code>Python</code>
+                                        <code>ReactJS</code>
+                                        <code>CSS</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <header>
+                                <h2>NBA Player Database</h2>
                             </header>
                             <img src="images/nba_database.gif" alt="" />
-                            <p>Created a NBA players database using ReactJS for the fontend, Python for the backend, and SQLite for the database management.
-                                The propose of the project was to use the skills I've learned about web systems and apply them. The 
-                                database sorts by columns and also can search for 1 or more different attributes for players in the database. 
-                                The project accounts for players being traded, added, or removed from the leauge by the database refreshing 
-                                everytime the website is refreshed.</p>
-                            <a href="https://github.com/rettag/NBA-Database" class="button-link"><div class="button">Check it out</div></a>
+
+                            <div class="content">
+                                <div class="what-i-did">What I Did</div>
+
+                                <div>
+                                    Driven by the goal of efficient organization, I developed a comprehensive NBA player database. 
+                                    It features column-based sorting and multi-attribute player search functionality, allowing quick 
+                                    access to relevant information. With real-time updates upon website refresh, the database accurately 
+                                    reflects player trades, additions, and removals, showcasing my expertise in database management.
+                                </div>
+                                
+                                <div class="button-and-codes">
+                                    <a href="https://github.com/rettag/NBA-Database" class="button">Check it out</a>
+                                    <div class="code">
+                                        <code>Python</code>
+                                        <code>ReactJS</code>
+                                        <code>SQLite</code>
+                                        <code>CSS</code>
+                                    </div>
+                                </div>
+                            </div>
                         </article>
-                        <article id="last1">
+
+                        <article>
                             <header>
                                 <h2>Text RPG Videogame</h2>
                             </header>
                             <img src="images/text_rpg.gif" alt="" />
-                            <p>This project was made during the Shammy Game Jam at the Univerity of Michigan where
-                                we had 48 hours to complete a game from scatch. I joined late so I worked on this game alone. 
-                                The game is called Battle Conquest where you go through infinite waves of enemies and can upgrade your character throughout the game.
-                                The goal is to get to the fruthest level and see how mch you can upgrade your player. 
-                                This project aims help me futher understand my knowledge of classes in the C++ langauge.</p>
-                            <a href="https://github.com/rettag/Battle-Conquest-Text-RPG" class="button-link"><div class="button">Check it out</div></a>
+
+                            <div class="content">
+                                <div class="what-i-did">What I Did</div>
+
+                                <div>
+                                    I participated in the 48-hour Shammy Game Jam game development contest.
+                                    The primary objective of this project was to enhance my understanding of object-oriented programming while also competing 
+                                    for first place. The resulting game, called Battle Conquest, immerses players in infinite waves of enemies and offers 
+                                    opportunities to upgrade their character as they progress. The ultimate goal is to reach the highest level possible and maximize 
+                                    player upgrades.
+                                </div>
+                                
+                                <div class="button-and-codes">
+                                    <a href="https://github.com/rettag/Battle-Conquest-Text-RPG" class="button">Check it out</a>
+                                    <div class="code">
+                                        <code>C++</code>
+                                    </div>
+                                </div>
+                            </div>
                         </article>
-                        <article id="last2">
+
+                        <article>
                             <header>
                                 <h2>Automatic Scalebar Detector</h2>
                             </header>
-                            <img src="images/scalebar.PNG" alt="" />
-                            <p>During my time with of NOME lab I was tasked with a personal project to automate the process of
-                                extracting sclaebar measurements from mircoscopic cavity images. There were steps I implemented to find the scalebar data.
-                            </p>
-                            <ol>
-                                <li>Find max length of pixels with same hue and zoom-in on top candidate.</li>
-                                <li>Use EAST algorithm to find the text near the scalebar.</li>
-                                <li>Use OCR to extract the measurement and units.</li>
-                            </ol>
+                            <img id="nome-project" src="images/scalebar.PNG" alt="" />
 
-                            <p>EAST algorithm is used to find letters, numbers, and symbols in an image. While
-                            OCR is a process used to extract the letters, numbers, and symbols from the images and put them in a string.</p>
+                            <div class="content">
+                                <div class="what-i-did">What I Did</div>
 
-                            <p>However, having multiple different variations of images such as previously labeled information, led to this process producing some unwanted outcomes.
-                                The next step in the process was rather than using the EAST algorithm I would implement a machine learning model to find the sclaebar and its measuement.
-                            </p>
-                            <a href="sort-project/sort.html" class="button-link"><div class="button">Check it out</div></a>
+                                <div>
+                                    While as a research assistant in NOME lab, I was tasked to automate the process of extracting scalebar 
+                                    measurements from microscopic cavity images. The process involved several steps involving the implementation of the EAST algorithm and OCR. 
+                                    I developed a strong foundation in computer vision using Python and gained extensive
+                                    experience with libraries such as NumPy, scikit-learn, and matplotlib, enhancing my skills in image processing and data analysis.
+                                </div>
+                                
+                                <div class="button-and-codes">
+                                    <a href="" class="button">Check it out</a>
+                                    <div class="code">
+                                        <code>Python</code>
+                                    </div>
+                                </div>
+                            </div>
                         </article>
                     </section>
             </div>
 
             <!-- Course Projects -->
-            <section class="section">
-                <div class="container">
-                  <h2>Completed Courses</h2>
-                  <div class="about-content">
+            <section id="completed-courses">
+                <div id="completed-courses-title">Completed Courses</div>
+                <div id="completed-courses-content">
                     <div class="list-container">
-                      <ul>
+                        <ul>
                         <li class="umich">Elementary Programming Concepts (EECS 183)</li>
                         <li class="umich">Discrete Mathematics (EECS 203)</li>
                         <li class="umich">Programming and Intro Data Structures (EECS 280)</li>
                         <li class="umich">Data Structures and Algorithms (EECS 281)</li>
+                        <li class="umich">Intro to Computer Organization (EECS 370)</li>
                         <li class="umich">Foundations of Computer Science (EECS 376)</li>
-                      </ul>
+                        </ul>
                     </div>
                     <div class="list-container">
-                      <ul>
+                        <ul>
+                        <li class="umich">Computer Vision (EECS 442)</li>
                         <li class="umich">Database Management Systems (EECS 484)</li>
-                        <li class="umich">Web Systems (EECS 485) (Current)</li>
-                        <li class="umich">User Interface Development (EECS 493) (Current)</li>
+                        <li class="umich">Web Systems (EECS 485)</li>
+                        <li class="umich">User Interface Development (EECS 493)</li>
+                        <li class="umich">Human-Centered Software Development (EECS 497)</li>
                         <li class="umich">Linear Algebra (MATH 270)</li>
                         <li class="nmc">Differential Equations (MTH 251)</li>
-                      </ul>
+                        </ul>
                     </div>
-                  </div>
                 </div>
-              </section>
+            </section>
 
-              <!-- Experiences -->
-              <div id="main">
-                <h2>Experiences</h2>
-                <!-- Posts -->
-                    <section class="posts">
-                        <article>
-                            <header>
-                                
-                                <h2>NOME Lab</h2>
-                            </header>
-                            <img id="nome" src="images/nome.jpg" alt="" />
-                            <p>NOME lab is inside Nuclear Engineering department at the University of Michigan which has been awarded as the 
-                                #1 in the world for nuclear engineering. The NOME lab works the research and advancement of nuclear materials</p>
-                                
-                                <p>I worked on an image-processing algorithm in Python to automate scale-bar image data extraction
-                                for future lab implantations while supporting a database of over 250+ scale-bar images
-                                </p>
-                            <a href="https://www.nome.engin.umich.edu/" class="button-link"><div class="button">Check it out</div></a>
-                        </article>
-                        <article>
-                            <header>
-                                
-                                <h2>Entreprenurs Leadership Program</h2>
-                            </header>
-                            <img id="elp" src="images/elp.jpg" alt="" />
-                            <p>The Entrepreneurs Leadership Program provides deep training and mentorship for a select cohort of students to develop the
-                                 functional, managerial, and leadership skills that differentiate the good from the great entrepreneurs. It equips some of
-                                  the University of Michigan’s most driven minds with a rigorous experiential curriculum to lead them onto an entrepreneurial
-                                   path during and after their college career. ELP consists of 20-25 students with less than a 15% acceptance rate into the program.
-                                I am currently in ELP Cohert 8 studying what its takes to be a great entrepreneur and leader.</p>
-                            <a href="https://cfe.umich.edu/elp/" class="button-link"><div class="button">Check it out</div></a>
-                        </article>
-                        <article>
-                            <header>
-                                <h2>MPowered Entreprenurship</h2>
-                            </header>
-                            <img id="mpowered" src="images/mpowered.jpg" alt="" />
-                            <p>MPowered is the University of Michigans student-run flagship entreprenurship club funded by the Center For Entrepreneurship.
-                                There are 6 events put on each year through the clubs to help inspire and drive innovation and entreprenurship throughout the university.
-                            </p>
+            <!-- Experiences -->
+            <div id="experiences">
+                <div id="experiences-title">Experiences</div>
+                <section id="experiences-content">
+                    <!-- NOME Lab -->
+                    <article>
+                        <header>
+                            <h2>NOME Lab</h2>
+                        </header>
+                        <img id="nome" src="images/nome.png" alt="" />
 
-                            <p>I coordinate with Center for Entrepreneurship Program Director to put on 100+ person Innovation
-                                Challenge event for students from all 19 colleges at the University of Michigan. I also assisted a different
-                                year for the Start-Up Career Fair where I was a member helping cold email and build relationships with companies in hopes they
-                                would attend the event.</p>
-                            <a href="https://mpowered.umich.edu/" class="button-link" target="_blank"><div class="button">Check it out</div></a>
-                        </article>
-                    </section>
-                    </div>
+                        <div class="content">
+                            <div class="what-i-did">What I Did</div>
+
+                            <div>
+                                The NOME lab, housed within the Nuclear Engineering department at the University of Michigan. The department has been ranked #1 in the world for nuclear engineering.
+                                During my time at the NOME lab, I developed a image-processing algorithm that automates the extraction of scale-bar image data, significantly enhancing the efficiency and accuracy of future lab implementations.
+                                Additionally, I successfully managed a comprehensive database comprising 250+ scale-bar images, providing a valuable resource for ongoing research and analysis within the lab.
+                                By implementing my algorithm, the NOME lab has witnessed improved productivity, reduced manual effort, and minimized potential errors, allowing researchers to focus on critical aspects of their work.
+                            </div>
+                            
+                            <div class="button-and-codes">
+                                <a href="https://www.nome.engin.umich.edu/" class="button">Check it out</a>
+                                <div class="code">
+                                    <code>Research Assistant</code>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Entreprenurs Leadership Program -->
+                    <article>
+                        <header>
+                            
+                            <h2>Entreprenurs Leadership Program</h2>
+                        </header>
+                        <img id="elp" src="images/elp.png" alt="" />
+
+                        <div class="content">
+                            <div class="what-i-did">What I Did</div>
+
+                            <div>
+                                I am a fellow of the Entrepreneur Leadership Program, a prestigious initiative that offers intensive 
+                                training and mentorship to a handpicked group of students. This exclusive program aims to cultivate exceptional 
+                                functional, managerial, and leadership skills, setting apart the truly outstanding entrepreneurs from the rest. 
+                                While part of ELP, I have been fortunate to receive a comprehensive experiential curriculum that empowers me to 
+                                pursue an entrepreneurial path both during and after my college career at the University of Michigan. I am currently 
+                                part of Cohort 8, an esteemed group comprising 20-25 students, selected from an acceptance rate of less than 15%. 
+                                Being a part of ELP allows me to delve deep into the qualities and characteristics that define great entrepreneurs and leaders.
+                            </div>
+                            
+                            <div class="button-and-codes">
+                                <a href="https://cfe.umich.edu/elp/" class="button">Check it out</a>
+                                <div class="code">
+                                    <code>Cohort 8 Fellow</code>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- MPowered Entreprenurship -->
+                    <article>
+                        <header>
+                            <h2>MPowered Entreprenurship</h2>
+                        </header>
+                        <img id="mpowered" src="images/mpowered.png" alt="" />
+
+                        <div class="content">
+                            <div class="what-i-did">What I Did</div>
+
+                            <div>
+                                MPowered is a student-run flagship entrepreneurship club at the University of Michigan, 
+                                backed by the Center for Entrepreneurship. Throughout the year, our club orchestrates 6 
+                                events that serve as catalysts for inspiration, innovation, and entrepreneurial spirit across the university campus. 
+                                As a director, I collaborate closely with the Center for Entrepreneurship to organize an 
+                                Innovation Challenge event, attracting 100+ students from all 19 colleges within the university. 
+                                Additionally, I successfully contributed to the success of the Start-Up Career Fair, leveraging my skills to cold email and 
+                                foster meaningful connections with various companies, aiming to secure their participation in the event.
+                            </div>
+                            
+                            <div class="button-and-codes">
+                                <a href="https://mpowered.umich.edu/" class="button" target="_blank">Check it out</a>
+                                <div class="code">
+                                    <code>Director & Member</code>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Add Other Experiences Here... -->
+                </section>
+            </div>
 	</body>
 </html>

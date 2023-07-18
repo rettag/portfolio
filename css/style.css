@@ -1,71 +1,109 @@
-/* Set a white background color */
+/* Main */
+:root {
+    --subtitle-font-size: 2.7vmin; 
+    --subtitle-content-padding: 2vmin;
+    --section-padding: 5vmin;
+    --paragraph-line-height: 2.5vmin;
+    --paragraph-letter-spacing: 0.02vmin;
+    --paragraph-font-size: 2vmin;
+    --code-font-size: 1.6vmin;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
-    background-color: #ffffff;
+    width: 85%;
+    margin: auto auto;
+    background-color: #e1f9ff;
     font-family: Calibri, sans-serif;
 }
 
-/* Style for top-left navigation bar */
+
+/* Navigation */
 #nav {
-    float: right;
+    display: flex;
+    margin-top: 1em;
+    justify-content: end;
+    width: 100%;
+}
+
+#nav .button {
+    margin-left: 0.5vmin;
 }
   
-/* Style the intro section */
+
+/* Introduction */
 #intro {
-text-align: center;
-padding: 30px;
+    text-align: center;
+    padding: 2vmin;
 }
 
 .profile img {
 border-radius: 50%;
-width: 150px;
-height: 150px;
+width: 17vmin;
+height: 17vmin;
 }
 
-/* Style the main section */
-#main {
-max-width: 1200px;
-margin: 0 auto;
-padding: 50px;
+#intro p {
+    font-size: var(--paragraph-font-size);
 }
 
-/* Style for about me section */
-.container {
-max-width: 1200px;
-margin: 0 auto;
+
+/* About Me */
+#about {
+    margin: 0 auto;
 }
 
-.about-content {
-background-color: #f9f9f9;
-border: 1px solid #e6e6e6;
-padding: 30px;
-border-radius: 5px;
+#about-title {
+    font-weight: bold;
+    font-size: var(--subtitle-font-size);
+    margin-bottom: var(--subtitle-content-padding);
 }
 
-/* Style the posts section */
-.posts {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+#about-content {
+    background-color: #f9f9f9;
+    border: 1px solid #e6e6e6;
+    padding: 3vmin;
+    border-radius: 5px;
+    line-height: var(--paragraph-line-height);
+    letter-spacing: var(--paragraph-letter-spacing);
+    font-size: var(--paragraph-font-size);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-/* Style for last two posts */
-#last1 {
-    margin: 0px;
+
+/* Projects */
+#projects-title {
+    font-weight: bold;
+    font-size: var(--subtitle-font-size);
+    margin-bottom: var(--subtitle-content-padding);
+    margin-top: var(--section-padding);
 }
 
-#last2 {
-    margin: 0px;
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
 }
 
-/* Style each individual project */
+
+/* Box Elements For Projects & Experiences*/
 article {
 width: 45%;
-margin-bottom: 50px;
+margin-bottom: 6vmin;
 background-color: #f9f9f9;
-padding: 20px;
-border: 1px solid #ddd;
+padding: 2vmin;
+border: 0.2vmin solid #ddd;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-border-radius: 5px;
+border-radius: 1.5vmin;
+display: flex;
+flex-direction: column;
+line-height: var(--paragraph-line-height);
+letter-spacing: var(--paragraph-letter-spacing);
 }
 
 article h2 {
@@ -76,36 +114,71 @@ article p {
 margin-bottom: 20px;
 }
 
-article a.button {
-display: block;
-margin-top: 20px;
-}
-
-/* Regression Model Style */
-#regression {
-    display: flex;
-}
-
-#regression img {
-    height: 50%;
-    width: 50%;
-}
-
-/* Style images within projects */
 article img {
-border: 1px solid #ddd;
-max-width: 100%;
-height: auto;
-border-radius: 5px;
+    border-radius: 1vmin;
+    height: auto;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
-/* Style Completed Courses */
+.button-and-codes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2vmin;
+}
+
+.code code {
+    background-color: rgb(255, 239, 98);
+    padding: 0.3vmin 0.5vmin;
+    border: 0.1vmin solid black;
+    font-size: var(--code-font-size);
+}
+
+.what-i-did {
+    font-weight: bold;
+    margin-bottom: 0.5vmin;
+    margin-top: 1vmin;
+}
+
+article .content {
+    margin-top: auto;
+}
+
+#nome-project {
+    margin-top: 12vmin;
+}
+
+
+/* Completed Courses */
+#completed-courses {
+    margin: auto auto;
+}
+
+#completed-courses-title {
+    font-weight: bold;
+    font-size: var(--subtitle-font-size);
+    margin-bottom: var(--subtitle-content-padding);
+}
+
+#completed-courses-content {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f9f9f9;
+    border: 1px solid #e6e6e6;
+    padding: 3vmin;
+    border-radius: 5px;
+    line-height: var(--paragraph-line-height);
+    letter-spacing: var(--paragraph-letter-spacing);
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
 .list-container {
-    display: inline-block;
-    vertical-align: top;
-    width: calc(50% - 10px); /* reduce the width by the padding to avoid wrapping */
-    box-sizing: border-box; /* include the padding in the width calculation */
     padding: 0 10px;
+    box-sizing: border-box;
+    max-width: 50%;
 }
 
 ul {
@@ -115,60 +188,38 @@ ul {
 }
 
 li {
-    padding-left: 30px; /* adjust this value based on the size of your image */
-    height: 20px;
-    line-height: 20px;
+    padding-left: 35px;
 }
 
 li.umich {
     background: url('../images/umich.jpg') no-repeat left center;
-    background-size: 20px 20px;
+    background-size: 2vmin 2vmin;
 }
   
 li.nmc {
     background: url('../images/nmc.jpg') no-repeat left center;
-    background-size: 20px 20px;
+    background-size: 2vmin 2vmin;
 }
 
-/* Experiences */
-#elp {
-    padding: 60px;
-    margin: 0 5%;
-}
 
-#nome {
-    padding: 52px;
-    margin: 0 23%;
-}
-
-#mpowered {
-    height: 200px;
-    padding: 40px;
-    margin: 0 23%;
-}
-
-/* Style for buttons */
+/* Buttons */
 .button {
+    text-decoration: none;
     display: inline-block;
-    padding: 0.5em 1.5em;
-    margin-top: 1em;
-    background-color: #2196F3;
+    padding: 1vmin 3vmin;
+    background-color: #25d3ff; /* #2196F3 */
     color: #fff;
     border-radius: 3px;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.1s ease-in-out;
 }
 
 .button:hover {
-    background-color: #0c7cd5;
+    background-color: #20b6db; /* #0c7cd5 */
     cursor: pointer;
 }
 
 .button:active {
-    background-color: #0a5ca2;
-}
-
-.button:focus {
-    outline: none;
+    background-color: #1a90ad;
 }
 
 .button-link {
@@ -179,4 +230,70 @@ li.nmc {
 .button-link:hover {
     text-decoration: underline;
 }
-  
+
+/* Experiences */
+#experiences-title {
+    font-weight: bold;
+    font-size: var(--subtitle-font-size);
+    margin-bottom: var(--subtitle-content-padding);
+    margin-top: var(--section-padding);
+}
+
+#experiences-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#mpowered {
+    background-color: rgb(0, 0, 0);
+}
+
+#elp {
+    width: 75%;
+    padding: 1vmin;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#nome {
+    width: 40%;
+    padding: 1vmin;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+/* Raise When Hovered */
+
+
+
+/* Responsive */
+@media(max-width: 950px) {
+    #projects {
+        display: block;
+        margin: auto auto;
+    }
+    article {
+        width: 95%;
+        line-height: 4vmin;
+    }
+}
+
+@media(max-width: 1136px) {
+    #completed-courses-content {
+        flex-direction: column;
+    }
+    .list-container {
+        max-width: 100%;
+    }
+    ul {
+        margin-bottom: 2vmin;
+        line-height: 4vmin;
+    }
+    li.umich {
+        background-size: 3vmin 3vmin;
+    }
+      
+    li.nmc {
+        background-size: 3vmin 3vmin;
+    }
+}
