@@ -328,6 +328,15 @@ li.nmc {
 /* Responsive */
 
 @media(max-width: 950px) {
+    /* Splash Screen */
+    #splash-screen-content img {
+        height: 30vmin;
+        width: 30vmin;
+    }
+    #splash-screen-content div {
+        font-size: 2.9vmin;
+    }
+
     /* Navigation */
     #nav .button {
         margin-left: 1vmin;
