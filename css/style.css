@@ -152,6 +152,39 @@ article .content {
     margin-top: 12vmin;
 }
 
+/* Box Elements for Company & Course Projects */
+#school-company-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+}
+
+.school-company-project-article {
+    width: 20%;
+    margin-bottom: 6vmin;
+    background-color: #f9f9f9;
+    padding: 2vmin;
+    border: 0.2vmin solid #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 1.5vmin;
+    display: flex;
+    flex-direction: column;
+    line-height: var(--paragraph-line-height);
+    letter-spacing: var(--paragraph-letter-spacing);
+}
+
+.school-company-project-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.school-company-project-header .type {
+    font-style: italic;
+    font-size: 2vmin;
+    margin-top: -2vmin;
+    margin-bottom: 1vmin;
+}
 
 /* Completed Courses */
 #completed-courses {
@@ -249,6 +282,7 @@ li.nmc {
 
 #mpowered {
     background-color: rgb(0, 0, 0);
+    margin: auto auto;
 }
 
 #elp {
@@ -263,6 +297,13 @@ li.nmc {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
+#desai {
+    width: 90%;
+    padding: 2vmin;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: rgb(0, 0, 0);
+    margin: auto auto;
+}
 
 /* Raise When Hovered */
 
@@ -401,6 +442,17 @@ li.nmc {
 
     #completed-courses-content {
         font-size: 3vmin;
+    }
+    .school-company-project-header .type {
+        font-size: 3vmin;
+    }
+    .school-company-project-article {
+        width: 30%;
+        min-width: 40%;
+        line-height: 4vmin;
+    }
+    #school-company-projects {
+
     }
 }
 
