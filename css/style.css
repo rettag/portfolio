@@ -451,6 +451,10 @@ li.nmc {
         min-width: 40%;
         line-height: 4vmin;
     }
+
+    #experiences-title {
+        font-size: 5vmin;
+    }
 }
 
 @media(max-width: 1136px) {
